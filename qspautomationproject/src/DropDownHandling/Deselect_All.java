@@ -13,8 +13,9 @@ public class Deselect_All {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("file:///C:/Users/DELL/Desktop/html/multipluedropdown.html");
-		WebElement DropDown = driver.findElement(By.id("menu"));
-		Select sel = new Select(DropDown);
+		
+		WebElement DropDown = driver.findElement(By.id("menu"));  
+		Select sel = new Select(DropDown);                           //select 
 
 		for(int i=2;i<=10;i++)
 		{
